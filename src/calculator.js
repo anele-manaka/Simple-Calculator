@@ -5,17 +5,18 @@ function add() {
 }
 return sum
 }
+//console.log(add (1,1))
 
-module.exports = {add}
 
 function multiply() {
+    
     var product = 1
     for (var i = 0; i < arguments.length; i++) {
 
-        product += arguments[i]
+        product *= arguments[i]
     }
     return product
-
-module.exports = {multiply}
-
 }
+//console.log(multiply (2,4))
+module.exports = {add, multiply}
+
